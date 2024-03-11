@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<a>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        animation-name: mover;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position:absolute;
+        top: 0;
+        left: 0;
+        font-size: 4em;
+        font-weight: 900;
+        text-decoration: none;
+        border-bottom: .1em solid blue;
+        color:blue;
+        transition: font-weigth 10s, color 5s;
+    }
+    a:hover{
+        border-bottom: .1em solid greenyellow;
+        color: greenyellow;
+        font-weight: 100;
+    }
+    @keyframes mover {
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 0;
+            left: 80%;
+        }
+        50%{
+            top: 80%;
+            left: 80%;
+        }
+        75%{
+            top:80%;
+            left:0%;
+        }
+        100%{
+            top:0%;
+            left:0%;
+        }
+
+    }
+    #trans_scale{
+        transform: scale(2);
+        transition: ;
+    }
+    span:first-child{
+        padding: 0;
+        transition: padding 10s;
+    }
+    a:hover span:first-child{}
+</style>
+<body>
+    <a id= "trans-sacale"  href="#"</a>
+    <a href="#"><span>click</span><span>here</span></a>
+</body>
+</html>
